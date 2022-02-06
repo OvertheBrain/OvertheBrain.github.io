@@ -16,4 +16,4 @@ The main purpose of this website is to **demonstrate myself** from a ***technica
 - 💻 Share the portfolios during my study.
 - 🔧 Improve the front pages and functions continuously, such as the complement of portfolio filter, the addition of comment module, beautify the layout, etc.
 
-The site is now deployed at <https://github.com/OvertheBrain/OvertheBrain.github.io>. If you have any advice or idea, please contact my E-mail or submit an issue on my Github page. Hope this will be a wonderful start.
+The site is now deployed at <https://github.com/OvertheBrain/OvertheBrain.github.io>. If you have any advice or idea, please contact my E-mail or submit an issue on my Github page. Hope this will be a wonderful start~~
