@@ -55,12 +55,25 @@ export default function PortfolioCard({ item }) {
         ))
       }
       {
-        tags && tags.tech && tags.tech.map((tag) => (
+        tags && tags.language && tags.language.map((tag) => (
           <Chip
             key={tag}
             label={tag}
             size="small"
             sx={{ marginTop: 1, marginRight: 1 }}
+          />
+        ))
+      }
+      {
+        tags && tags.tech && tags.tech.map((tag) => (
+          <Chip
+            key={tag}
+            label={tag}
+            size="small"
+            sx={{
+              marginTop: 1,
+              marginRight: 1
+            }}
           />
         ))
       }

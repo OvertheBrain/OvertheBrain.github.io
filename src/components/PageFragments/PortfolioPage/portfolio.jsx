@@ -6,7 +6,7 @@ import {
   Card,
   Checkbox,
 } from 'antd';
-import { Check, Build, Category } from '@mui/icons-material';
+import { Check, Build, Category, Language } from '@mui/icons-material';
 
 import portfolio from '../../../../portfolio/portfolio';
 import PortfolioCard from '../../PortfolioCard';
@@ -14,6 +14,7 @@ import PortfolioCard from '../../PortfolioCard';
 const Portfolio = () => {
   const [tech, setTech] = useState({});
   const [category, setCategory] = useState({});
+  const [language, setLanguage] = useState({});
 
   const filterFunc = (item, name, stateValue) => {
     if (item && item.tags && item.tags[name] && item.tags[name]) {
@@ -29,10 +30,10 @@ const Portfolio = () => {
   };
 
   const Cards = portfolio.filter((item) => filterFunc(item, 'tech', tech))
-    .filter((item) => filterFunc(item, 'category', category))
-    .map((item) => {
+    .filter((item) => filterFunc(item, 'language', language))
+    .filter((item) => filterFunc(item, 'category', category)).map((item) => {
       const fadeIn = filterFunc(item, 'tech', tech) && filterFunc(item,
-        'category', category);
+        'category', category) && filterFunc(item, 'language', language);
       return (
         <Fade in={fadeIn} appear>
           <Grid item xs={12} md={6} xl={4} key={item.name}>
@@ -44,6 +45,7 @@ const Portfolio = () => {
 
   const techTagSet = new Set();
   const categoryTagSet = new Set();
+  const lanTagSet = new Set();
   portfolio.forEach((item) => {
     if (item && item.tags) {
       if (item.tags.tech) {
@@ -54,6 +56,11 @@ const Portfolio = () => {
       if (item.tags.category) {
         item.tags.category.forEach((tag) => {
           categoryTagSet.add(tag);
+        });
+      }
+      if (item.tags.language) {
+        item.tags.language.forEach((tag) => {
+          lanTagSet.add(tag);
         });
       }
     }
@@ -131,7 +138,7 @@ const Portfolio = () => {
 
   const techTags = useMemo(
     () => (
-      <Grid container spacing={2} mt={2} alignItems="center" rowSpacing={1}>
+      <Grid container spacing={2} mt={1} alignItems="center" rowSpacing={0.5}>
         <Grid item>
           <Build />
         </Grid>
@@ -142,7 +149,7 @@ const Portfolio = () => {
 
   const categoryTags = useMemo(
     () => (
-      <Grid container spacing={1} mt={1} alignItems="center" rowSpacing={0.5}>
+      <Grid container spacing={1} alignItems="center" rowSpacing={0.5}>
         <Grid item sx={{ marginRight: 1}}>
           <Category />
         </Grid>
@@ -151,12 +158,26 @@ const Portfolio = () => {
     ), [category],
   );
 
+  const languageTags = useMemo(
+    () => (
+      <Grid container spacing={1} mt={1} alignItems="center" rowSpacing={0.5}>
+        <Grid item sx={{ marginRight: 1}}>
+          <Language />
+        </Grid>
+        {tagsFromSets(lanTagSet, language, setLanguage)}
+      </Grid>
+    ), [language],
+  );
+
   return (
     <>
       <Card title="Filter">
         {categoryTags}
         <Divider sx={{ mt: 2 }} />
+        {languageTags}
+        <Divider sx={{ mt: 2 }} />
         {techTags}
+
       </Card>
       <Grid
         container

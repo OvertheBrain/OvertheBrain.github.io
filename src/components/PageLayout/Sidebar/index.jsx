@@ -33,7 +33,7 @@ const DomContent = () => (
     <Stack direction="column" alignItems="center" spacing={2.5}>
       <Avatar
         alt="Brian Han"
-        src=""
+        src="https://pic.imgdb.cn/item/6202e0852ab3f51d91991243.jpg"
         sx={{ width: 160, height: 160 }}
       />
       <Typography style={{

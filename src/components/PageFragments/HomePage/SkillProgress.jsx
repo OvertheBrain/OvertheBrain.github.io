@@ -8,12 +8,12 @@ const SkillsProgress = () => (
     <Row style={{ marginTop: -10 }} gutter={[20, 20]}>
       <Col xs={24} sm={24} md={12}>
         <ProgressBar
-          percent={90}
+          percent={75}
           text="C++"
           color="#f12970"
         />
         <ProgressBar
-          percent={80}
+          percent={90}
           text="JavaScript"
           color="#fcbf1d"
         />
@@ -39,12 +39,12 @@ const SkillsProgress = () => (
           text="Mysql"
         />
         <ProgressBar
-          percent={70}
+          percent={50}
           text="Springboot"
           color="#24cd08"
         />
         <ProgressBar
-          percent={50}
+          percent={80}
           text="Unity"
           color="black"
         />
