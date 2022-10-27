@@ -23,7 +23,7 @@ const AboutMe = () => {
               config.aboutMe.map((para, index) => (
                 <p key={index}>{para}</p>
               ))
-            }
+          }
         </div>
       </div>
 

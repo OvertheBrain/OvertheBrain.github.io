@@ -1,6 +1,6 @@
 module.exports = {
   pathPrefix: '',
-  siteUrl: 'https://brianhan.me',
+  siteUrl: 'https://overthebrain.github.io',
   siteTitle: 'Brian Han',
   siteDescription: 'Personal Website of Brian Han',
   author: 'Brian Han',
@@ -19,6 +19,7 @@ module.exports = {
     github: 'https://github.com/OvertheBrain',
     twitter: '',
     bilibili: 'https://space.bilibili.com/12827642?spm_id_from=333.1007.0.0',
+    telegram: '',
   },
   education: [
     {
@@ -36,13 +37,11 @@ module.exports = {
   ],
 
   aboutMe: [
-    'Hello/你好/こんにちは, welcomed visitor! This is Brian Han. You can call me Brian or OB. Of course, 韩亦多 in Chinese is always OK.',
-    'I was born in New York City, United States and I am currently studying in Shanghai, China for my bachelor degree.',
-    'I am a junior student studying Software Engineering at Shanghai Jiao Tong University.',
-    'I am major in digital media technologies, such as Game programming, Computer Vision, etc.',
-    'My hobbies are animation, idol projects and writing comments on related fields.',
-    'I hope to create wonderful things that combine coding and hobbies.',
-    'This website is built to demonstrate myself and share my portfolio during my study. Any consructive advice, questions and issues are sincerely welcomed. Wish you a good time here!',
+    '👋 Hello/你好/こんにちは, welcomed visitor! This is Brian Han. You can call me Brian or Han Yiduo in Chinese.',
+    '🏙️ I was born in New York City, United States and I am currently studying in Shanghai, China for my bachelor degree.',
+    '🎓 Now, as a senior student studying Software Engineering at Shanghai Jiao Tong University, I am preparing for my graduate degree application and graduation design.',
+    '💻 During my undergraduate years, I have gained knowledge about system/software engineering/ML/CG/Web/etc. Before, I was doing software development internship in Digital ART Lab of SJTU, covering human-computer interaction, front-end development and visualization.',
+    '😃 My hobbies are ACG, idol projects and writing comments on related fields and I hope to create wonderful things that combine coding and hobbies.',
   ],
 
   contactFormUrl: process.env.CONTACT_FORM_ENDPOINT || 'https://getform.io/f/09a3066f-c638-40db-ad59-05e4ed71e451',

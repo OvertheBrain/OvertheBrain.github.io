@@ -5,7 +5,7 @@ import {
 import {
   GitHub,
   Twitter,
-  AnimationOutlined,
+  AnimationOutlined, Telegram, ScreenLockLandscape, Screenshot, Videocam,
 } from '@mui/icons-material';
 import {
   Avatar,
@@ -23,7 +23,8 @@ import Config from '../../../../config';
 const iconMap = {
   github: <GitHub />,
   twitter: <Twitter />,
-  bilibili: <AnimationOutlined />,
+  bilibili: <Videocam />,
+  telegram: <Telegram />,
 };
 
 const { Content } = Layout;
@@ -37,12 +38,12 @@ const DomContent = () => (
         sx={{ width: 160, height: 160 }}
       />
       <Typography style={{
-        fontSize: 28, fontWeight: 600, color: 'white', marginBottom: -5,
+        fontSize: 28, fontWeight: 600, color: "white", marginBottom: -5,
       }}
       >
         Brian Han
       </Typography>
-      <Chip label="Undergraduate" />
+      <Chip style={{color: 'whitesmoke'}} label="Undergraduate" />
       <Stack direction="row">
         {(Object.entries(Config.social)).map((link) => (
           <IconButton href={link[1]} key={link[0]}>

@@ -15,6 +15,7 @@ const Portfolio = () => {
   const [tech, setTech] = useState({});
   const [category, setCategory] = useState({});
   const [language, setLanguage] = useState({});
+  const [check, setCheck] = useState(false);
 
   const filterFunc = (item, name, stateValue) => {
     if (item && item.tags && item.tags[name] && item.tags[name]) {
@@ -87,6 +88,7 @@ const Portfolio = () => {
           ...prev,
           [tag]: !prev[tag],
         }));
+        setCheck(true);
       };
       return (
         <Grid item key={tag}>
@@ -99,6 +101,7 @@ const Portfolio = () => {
           {/* /> */}
           <Checkbox
             key={tag}
+            checked={check && stateValue[tag]}
             onChange={onClick}
           >
             {Label}
@@ -108,6 +111,7 @@ const Portfolio = () => {
     });
     const clearAll = () => {
       setFunc({});
+      setCheck(false);
     };
     return (
       <>
