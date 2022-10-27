@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://brianhan.me/sitemap/sitemap-index.xml
-Host: https://brianhan.me
+Sitemap: https://overthebrain.github.io/sitemap/sitemap-index.xml
+Host: https://overthebrain.github.io
