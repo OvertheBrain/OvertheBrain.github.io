@@ -72,6 +72,7 @@ const DomContent = () => (
         type="primary"
         size="large"
         shape="round"
+        style={{marginTop: 40}}
       >
         <a href="/BRIANHAN.pdf">Resume</a>
       </Button>

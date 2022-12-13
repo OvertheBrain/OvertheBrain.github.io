@@ -17,7 +17,7 @@ module.exports = {
   },
   social: {
     github: 'https://github.com/OvertheBrain',
-    twitter: '',
+    twitter: 'https://twitter.com/One2Multiple',
     bilibili: 'https://space.bilibili.com/12827642?spm_id_from=333.1007.0.0',
     telegram: '',
   },
@@ -25,11 +25,11 @@ module.exports = {
     {
       date: 'Sept. 2019 - Present',
       icon: 'university',
-      title: 'B.S.E. in Software Engineering',
+      title: 'B.Eng. in Software Engineering',
       location: 'Shanghai Jiao Tong University, Shanghai, China',
     },
     {
-      date: 'Sept. 2016 - Jul. 2019',
+      date: 'Sept. 2016 - July 2019',
       icon: 'school',
       title: 'High School',
       location: 'Shanghai Cao Yang No.2 High School, China',
