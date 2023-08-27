@@ -13,12 +13,12 @@ const SkillsProgress = () => (
           color="#f12970"
         />
         <ProgressBar
-          percent={90}
+          percent={85}
           text="JavaScript"
           color="#fcbf1d"
         />
         <ProgressBar
-          percent={75}
+          percent={90}
           text="Java"
           color="#f64c0b"
         />
@@ -30,21 +30,21 @@ const SkillsProgress = () => (
       </Col>
       <Col xs={24} sm={24} md={12}>
         <ProgressBar
-          percent={85}
+          percent={60}
           text="Python"
           color="#063c8d"
         />
         <ProgressBar
           percent={70}
-          text="Mysql"
+          text="MongoDB"
         />
         <ProgressBar
-          percent={50}
+          percent={90}
           text="Springboot"
           color="#24cd08"
         />
         <ProgressBar
-          percent={80}
+          percent={70}
           text="Unity"
           color="black"
         />

@@ -5,7 +5,7 @@ import {
 import {
   GitHub,
   Twitter,
-  AnimationOutlined, Telegram, ScreenLockLandscape, Screenshot, Videocam,
+  AnimationOutlined, Telegram, ScreenLockLandscape, Screenshot, Videocam, LinkedIn,
 } from '@mui/icons-material';
 import {
   Avatar,
@@ -24,7 +24,7 @@ const iconMap = {
   github: <GitHub />,
   twitter: <Twitter />,
   bilibili: <Videocam />,
-  telegram: <Telegram />,
+  linkedin: <LinkedIn />,
 };
 
 const { Content } = Layout;
@@ -43,7 +43,7 @@ const DomContent = () => (
       >
         Brian Han
       </Typography>
-      <Chip style={{color: 'whitesmoke'}} label="Undergraduate" />
+      <Chip style={{color: 'whitesmoke'}} label="Graduate" />
       <Stack direction="row">
         {(Object.entries(Config.social)).map((link) => (
           <IconButton href={link[1]} key={link[0]}>
@@ -55,13 +55,13 @@ const DomContent = () => (
         <Stack direction="row" spacing={1}>
           <FeatherIcon size="21" icon="map-pin" />
           <Typography component="div">
-            Shanghai, China
+            Seattle, WA
           </Typography>
         </Stack>
         <Stack direction="row" spacing={1}>
           <FeatherIcon size="21" icon="mail" />
           <a
-            href="mailto: hanyiduo31@126.com;"
+            href="mailto: overthebrain@outlook.com;"
             target="_top"
           >
             <span className={style.emailHider}>@</span>

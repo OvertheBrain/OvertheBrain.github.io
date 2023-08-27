@@ -19,11 +19,17 @@ module.exports = {
     github: 'https://github.com/OvertheBrain',
     twitter: 'https://twitter.com/One2Multiple',
     bilibili: 'https://space.bilibili.com/12827642?spm_id_from=333.1007.0.0',
-    telegram: '',
+    linkedin: 'https://www.linkedin.com/in/brian-han-6aba95281/',
   },
   education: [
     {
-      date: 'Sept. 2019 - Present',
+      date: 'Sept. 2023 - Mar. 2025 (incoming)',
+      icon: 'university',
+      title: 'Master of Science in Electrical Engineering',
+      location: 'University of Washington, Seattle, WA',
+    },
+    {
+      date: 'Sept. 2019 - June 2023',
       icon: 'university',
       title: 'B.Eng. in Software Engineering',
       location: 'Shanghai Jiao Tong University, Shanghai, China',
@@ -38,9 +44,10 @@ module.exports = {
 
   aboutMe: [
     '👋 Hello/你好/こんにちは, welcomed visitor! This is Brian Han. You can call me Brian or Han Yiduo in Chinese.',
-    '🏙️ I was born in New York City, United States and I am currently studying in Shanghai, China for my bachelor degree.',
-    '🎓 Now, as a senior student studying Software Engineering at Shanghai Jiao Tong University, I am preparing for my graduate degree application and graduation design.',
+    '🏙️ I was born in New York City, United States and I have earned my bachelor\'s degree in Software Engineering from SJTU in China.',
+    '🎓 Now, I\'m going to University of Washington for my master\'s degree in Electrical and Computer Engineering.',
     '💻 During my undergraduate years, I have gained knowledge about system/software engineering/ML/CG/Web/etc. Before, I was doing software development internship in Digital ART Lab of SJTU, covering human-computer interaction, front-end development and visualization.',
+    '👨‍🎓 I also worked as TA for a major course in the lab, responsible for developing the back-end server of the student lab platform for the course\'s projects, and applied this to my undergraduate thesis.',
     '😃 My hobbies are ACG, idol projects and writing comments on related fields and I hope to create wonderful things that combine coding and hobbies.',
   ],
 

@@ -39,4 +39,17 @@ export default [
       tech: ['Native Android'],
     },
   },
+  {
+    name: 'Coordinator for Cooperative-Combat-System',
+    url: {
+      github: 'https://github.com/Cooperative-Combat-System/SchedulingServer',
+    },
+    image: '/portfolio/Combat-System.png',
+    description: 'Undergraduate thesis project in Software Engineering: a back-end server with REST APIs which manages the storage and forwarding of combat resource and handles requests from clients. Implement TCP protocol communication with the combat game server,',
+    tags: {
+      category: ['Back End'],
+      language: ['Java'],
+      tech: ['Spring-Boot', 'MongoDB'],
+    },
+  },
 ];

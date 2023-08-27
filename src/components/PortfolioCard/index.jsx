@@ -98,12 +98,16 @@ export default function PortfolioCard({ item }) {
           variant="body2"
           color="text.secondary"
           height={80}
+          style={{marginBottom: 25}}
           paragraph
         >
           {description}
         </Typography>
+
         {Tags}
+
       </CardContent>
+
       <CardActions disableSpacing>
         {Icons}
         {page && (
